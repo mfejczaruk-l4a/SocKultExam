@@ -44,7 +44,7 @@ names(right)[names(right) == 'Est_dif_blue_right'] <- 'Est_dif_blue_right_answer
 left_ontheway <- select(left, -c(53:59, "Error_int_left_correct", "Est_int_left_correct", "Est_int_left", "Error_int_left", "Error_dif_blue_left"))
 
 
-#merge the shit 
+#merge the butterfly 
 no_pool_data <- cbind(left_ontheway, right$Est_dif_blue_right_answer, right$Est_dif_blue_right_correct, joint$Est_dif_blue_joint_answer, joint$Est_dif_blue_joint_correct)
 
 
